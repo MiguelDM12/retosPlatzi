@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Styles/styles.css" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;400&display=swap" rel="stylesheet">
+    <script src="./Scripts/geometryCalculator.js"></script>
+    <title>Calcular figuras geométricas</title>
+</head>
+<body>    
+<header class="header_workshop">
+    <picture>
+        <img src="./Assets/object (1).png" alt="icon_geometry">
+    </picture>
+    <h1>Calculadora Figuras Geométricas</h1>
+</header>
+<main>
+    <div class="geometric_calculators">
+        <div class="geometric_calculators_container" id="1">
+            <div class="geometric_calculators_container_header">
+                <picture>
+                    <img src="./Assets/cuadrado.png" alt="icon_square">
+                </picture>
+                <h2>Calculadora Cuadrado</h2>
+            </div>                
+            <form>
+                <ul>
+                    <li>                        
+                        <span>Introduce la medida del lado del cuadrado (en cm)</span>
+                    </li>
+                    <li>
+                        <label for="square_side"></label>
+                        <input type="text" name="square_side" id="square_side" placeholder="Lado del cuadrado"/>
+                    </li>
+                    <li>
+                        <button type="button" class="geometric_calculators_container_button" onclick="squarePerimeterClick()">Calcular Perímetro</button><br>
+                    <li>    
+                        <button type="button" class="geometric_calculators_container_button" onclick="squareAreaClick()">Calcular Área</button>
+                    </li>
+                    <li>
+                        <p id="geometric_calculators_container_result_square"></p>
+                    </li>
+                </ul>
+            </form>
+        </div>
+        <div class="geometric_calculators_container" id="2">
+            <div class="geometric_calculators_container_header">
+                <picture>
+                    <img src="./Assets/triangulo.png" alt="icon_triangle">
+                </picture>
+                <h2>Calculadora Triángulo</h2>
+            </div>                
+            <form class="geometric_calculators_container_triangle">
+                <ul>
+                    <li>                        
+                        <span>Introduce las medidas del triángulo (en cm)</span>
+                    </li>
+                    <li class="geometric_calculators_container_triangle_inputInline">
+                        <label for="triangle_side1"></label>
+                        <input type="text" name="triangle_side1" id="triangle_side1" placeholder="Lado 1"/>                        
+                    </li>
+                    <li class="geometric_calculators_container_triangle_inputInline">
+                        <label for="triangle_side2"></label>
+                        <input type="text" name="triangle_side2" id="triangle_side2" placeholder="Lado 2"/>                        
+                    </li>
+                    <li class="geometric_calculators_container_triangle_inputInline">
+                        <label for="triangle_side3"></label>
+                        <input type="text" name="triangle_side3" id="triangle_side3" placeholder="Base"/>                        
+                    </li>
+                    <li class="geometric_calculators_container_triangle_inputInline">
+                        <label for="triangle_side4"></label>
+                        <input type="text" name="triangle_side4" id="triangle_side4" placeholder="Altura"/>                        
+                    </li>
+                    <li>
+                        <button type = "button" class="geometric_calculators_container_button" onclick="trianglePerimeterClick()">Calcular Perímetro</button><br>
+                    <li>    
+                        <button type = "button" class="geometric_calculators_container_button" onclick="triangleAreaClick()">Calcular Área</button>
+                    </li>
+                    <li>
+                        <span id="geometric_calculators_container_result_triangle"></span>
+                    </li>
+                </ul>
+            </form>
+        </div>
+        <div class="geometric_calculators_container" id="3">
+            <div class="geometric_calculators_container_header">
+                <picture>
+                    <img src="./Assets/circle.png" alt="icon_circle">
+                </picture>
+                <h2>Calculadora Círculo</h2>
+            </div>                
+            <form>
+                <ul>
+                    <li>                        
+                        <span>Introduce el diámetro del círculo (en cm)</span>
+                    </li>
+                    <li>
+                        <label for="circle_diameter"></label>
+                        <input type="text" name="circle_diameter" id="circle_diameter" placeholder="Diámetro"/>
+                    </li>
+                    <li>
+                        <button type="button" class="geometric_calculators_container_button" onclick="circlePerimeterClick()">Calcular Perímetro</button><br>
+                    <li>    
+                        <button type="button" class="geometric_calculators_container_button" onclick="circleAreaClick()">Calcular Área</button>
+                    </li>
+                    <li>
+                        <span id="geometric_calculators_container_result_circle"></span>
+                    </li>
+                </ul>
+            </form>
+        </div>
+    </div>
+</main>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Styles/styles.css" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;400&display=swap" rel="stylesheet">
+    <script src="./Scripts/discountPricesCalc.js"></script>
+    <title>Calcular descuentos y precios</title>
+</head>
+<body>    
+    <header class="header_workshop">
+        <picture>
+            <img src="./Assets/cupon.png" alt="icon_discountPrices">
+        </picture>
+        <h1>Calculadora de Descuentos y Precios</h1>
+    </header>
+    <main>
+        <div class="product_price_discount">
+            <div class="product_price_discount_priceImage">
+                <picture>
+                    <img src="/Assets/NIKE_AIR_JORDAN_1_RETRO_MID_BANNED-mini.jpg" alt="air_jordan_sneakers">
+                </picture>
+            </div>
+            <div class="product_price_discount_description">
+                <h2>Zapatillas Air Jordan 1 Mid</h2>
+                <p>Inspiradas en las AJ1 originales, las Air Jordan 1 Mid ofrecen a los aficionados la oportunidad de seguir los pasos de MJ. El nuevo color ribetea los materiales clásicos e impecables e infunde modernidad a un diseño clásico. <br><br>El modelo Nike Air Jordan 1 Retro High es una reedición que hace referencia a la versión original del Air Jordan 1. En esta silueta destaca la amortiguación reactiva y materiales premium por los que se dieron a conocer la prestigiosa zapatillas del jugador de la NBA, Michael Jordan. En esta silueta la firma americana ha querido mantener el estilo sencillo y sobrio por el que destacaban las zapatillas de basket que lucían los profesionales de la NBA sobre la década de los 80. </p>
+                <br>
+                <span id="product_price_discount_priceAfter"><p>110,50 €</p></span><span id="product_price_discount_priceBefore"><p></p></span> 
+                <p>¿Tienes un cupón?</p>
+                <form>
+                    <label for = "coupon"></label>
+                    <input id="coupon_input" type="text" name="coupon"/>
+                    <button type="button" class="coupon_input_button" onclick="comprobateCoupon()">Validar Cupón</button>
+                </form>
+                <span class="product_price_discount_priceBefore"></span><p></p>
+            </div>
+        </div>
+    </main>
+</body>

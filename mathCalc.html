@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Styles/styles.css" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;400&display=swap" rel="stylesheet">
+    <script src="./Scripts/mathCalc.js"></script>
+    <title>Calcular moda, media y mediana</title>
+</head>
+<body>    
+    <header class="header_workshop">
+        <picture>
+            <img src="./Assets/matematicas.png" alt="icon_maths">
+        </picture>
+        <h1>Calculadora de Media, Moda y Mediana</h1>
+    </header>
+    <main>
+    <div>
+        <div class="maths_calc_container">   
+            <form action="" class="maths_calc_container_form">
+                <label for="textarea_number">Introduce los números que quieras, separados por coma y sin espacios</label>
+                <br><br>
+                <textarea id="textarea_number" cols="40" rows="5" placeholder="Introduce aquí los números"></textarea>
+                <br>
+                <br>
+                <br>
+                <button id="calculate_result_button" type="button" onclick="calculateValues()">Calcular Resultados</button>
+            </div>
+            <div class="maths_calc_container_results">
+                <div class="maths_calc_container_results_cont">
+                    <h3>Media</h3>
+                    <br>
+                    <span id="average_result"></span>
+                    <br>
+                    </div>
+                <div class="maths_calc_container_results_cont">
+                    <h3>Moda</h3>
+                    <br>
+                    <span id="statisticalMode_result"></span>
+                    <br>
+                </div>
+                <div class="maths_calc_container_results_cont">
+                    <h3>Mediana</h3>
+                    <br>
+                    <span id="median_result"></span>
+                    <br>
+                </div>
+                </div>
+            </form>       
+        </div>
+    </div>
+</main>
+    </body>
+    </html>
