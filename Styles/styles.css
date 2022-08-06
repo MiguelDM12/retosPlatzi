@@ -282,5 +282,57 @@
     color:#FF2B2A;
     font-weight: bold;
     font-size: 20px;
-
 }
+
+/*MATH LOAN REPAYMENT*/
+.loanRepayment_container{
+    width: 100%;
+    margin: 0 auto;
+}
+
+.loanRepayment_container h2{
+    color: #ffffff;
+    text-align: center;
+    font-size: 18px;
+}
+
+.loanRepayment_info{
+    width: 30%;
+    min-width: 250px;
+    margin: 0 auto;
+    border: 2px solid #FF2B2A;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.loanRepayment_info h3{
+    color: #ffffff;
+    font-size: 16px;
+}
+
+.loanRepayment_info label{
+    color: #ffffff;
+}
+
+.loanRepayment_info input{
+    border: solid #ffffff 1px;
+    height: 35px;
+    width: 30%;
+    min-width: 135px;
+    border-radius: 3px;
+    color: white;
+    padding-left: 5px;
+}
+
+.loanRepayment_info button{
+    background-color: #FF2B2A;;
+    height: auto;
+    border: none;
+    width: 30%;
+    color: white;
+    min-width: 135px;
+    border-radius: 3px;
+    padding: 6px;
+}
+
+

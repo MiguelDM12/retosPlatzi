@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Styles/styles.css" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;400&display=swap" rel="stylesheet">
+    <script src=""></script>
+    <title>Calcular Cuotas de Amortización de Préstamo</title>
+</head>
+<body>    
+    <header class="header_workshop">
+        <picture>
+            <img src="./Assets/salario.png" alt="icon_money">
+        </picture>
+        <h1>Calculadora de Amortización</h1>
+    </header>
+    <main>
+        <div class="loanRepayment_container">
+            <h2>Esta calculadora está basada en el método de amortización de capital francés.</h3>
+                <br>
+            <div class="loanRepayment_info">
+                <br>
+                <h3>Datos del préstamo</h3>
+                <br>
+                <label for="capitalization_amount">Importe del Préstamo</label>
+                <br>
+                <br>
+                <input type="text" id="capitalization_amount">
+                <br>
+                <br>
+                <label for="capitalization_rate">Tasa de capitalización mensual (%)</label>
+                <br>
+                <input id="capitalization_rate" type="range" min="1" max="24" value="100" steps="1">\
+                <br>
+                <label for="capitalization_date">Número de años</label>
+                <br>
+                <input id="capitalization_date" type="range" min="1" max="24" value="100" steps="1">
+                <br>
+                <button type="button">Calcular Cuadro Amortización</button>
+                <br>
+                <br>
+            </div>
+        </div>  
+    </main>
+</body>
