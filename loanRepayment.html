@@ -33,12 +33,20 @@
                 <br>
                 <br>
                 <label for="capitalization_rate">Tasa de capitalización mensual (%)</label>
-                <br>
-                <input id="capitalization_rate" type="range" min="1" max="24" value="100" steps="1">\
+                <div class="slider-container">
+                    <div class="slider-container-valueBlock">
+                        <span class="valueBlock-value">0</span>
+                    </div>                    
+                </div>            
+                <input class="slider" type="range" min="1" max="24" value="100" steps="1">
                 <br>
                 <label for="capitalization_date">Número de años</label>
-                <br>
-                <input id="capitalization_date" type="range" min="1" max="24" value="100" steps="1">
+                <div class="slider-container">
+                    <div class="slider-container-valueBlock">
+                        <span class="valueBlock-value">0</span>
+                    </div>                    
+                </div>            
+                <input class="slider" type="range" min="1" max="24" value="100" steps="1">
                 <br>
                 <button type="button">Calcular Cuadro Amortización</button>
                 <br>
