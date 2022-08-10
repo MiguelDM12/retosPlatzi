@@ -342,6 +342,8 @@
     font-weight: bold;
 }
 
+/* --------Input range styles------*/
+
 input[type=range]{
     border:none;
 }
