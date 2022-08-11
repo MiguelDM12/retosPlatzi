@@ -38,7 +38,7 @@
                         <span id="valueBlock-value1">0</span>
                     </div>                    
                 </div>            
-                <input id="slider1" type="range" min="1" max="24" value="0" steps="1"/>
+                <input id="slider1" type="range" min="1" max="10" value="0" step="0.1"/>
                 <br>
                 <label for="capitalization_date">Número de años</label>
                 <div class="slider-container">
@@ -46,11 +46,29 @@
                         <span id="valueBlock-value2">0</span>
                     </div>                    
                 </div>            
-                <input id="slider2" type="range" min="1" max="24" value="0" steps="1"/>
+                <input id="slider2" type="range" min="1" max="25" value="0" step="1"/>
                 <br>
-                <button type="button">Calcular Cuadro Amortización</button>
+                <button type="button" onclick="calculateAmortizationSchedule()">Calcular Cuadro Amortización</button>
                 <br>
                 <br>
+            </div>
+            <br>
+            <br>
+            <div class="loanRepayment_output">
+                <table>
+                    <th>Mes</th>
+                    <th>Cuota</th>
+                    <th>Capital</th>
+                    <th>Interés</th>
+                    <th>Capital vivo</th>
+                    <tr>
+                        <td>2432</td>
+                        <td>2432</td>
+                        <td>2432</td>
+                        <td>2432</td>
+                        <td>2432</td>
+                    </tr>
+                </table>
             </div>
         </div>  
     </main>
