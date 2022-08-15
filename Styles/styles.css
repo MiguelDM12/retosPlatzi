@@ -440,26 +440,27 @@ input[type=range] {
     background: #ffffff;
   }
 
-  .loanRepayment_output{
+  #loanRepayment_output{
     color:#ffffff;
     width: 100%;
+    margin-bottom: 5%;
   }
 
-  .loanRepayment_output table{
+  #loanRepayment_output table{
     width: 60%;
     margin: 0 auto;
     border: 1px solid #FF2B2A;
+    padding: 1%;
   }
 
-  .loanRepayment_container th{
+  #loanRepayment_container th{
     text-align: center;
     width: 200px;
     padding: 0.5%;
   }
 
-
-  .loanRepayment_output td{
-    padding: 0.5%;
+  #loanRepayment_output td{
+    padding: 1%;
     margin: 0;
     text-align: center;
   }
