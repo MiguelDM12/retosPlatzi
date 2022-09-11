@@ -24,7 +24,6 @@ function calculateAmortizationSchedule(){
     outputScheduleLoan.innerHTML = `<th>Año</th>`+`<th>Cuota</th>`+`<th>Intereses</th>`+`<th>Capital</th>`+`<th>Capital Vivo</th>`;
     let loanInterest = inputContainer.value/100;
     let amountPayYear = totalAmount.value*loanInterest/(1-(Math.pow(1+loanInterest, -inputContainer2.value)));
-    console.log(amountPayYear);
     let year = 0;
     let fee = 0;
     let capital = 0;
