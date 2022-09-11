@@ -42,8 +42,6 @@ function calculateValues(){
 
     let arrayCountValues = Object.entries(objectCountValues).sort(function(a,b){return a-b});
 
-    console.log(arrayCountValues);
-
     let statisticalMode = arrayCountValues[arrayCountValues.length-1][0];
     
     statisticalMode_result.innerText = statisticalMode;
