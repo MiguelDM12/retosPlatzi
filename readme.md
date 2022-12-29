@@ -15,3 +15,4 @@ Tecnologías Utilizadas:
 Actualizaciones:
 
 - [11/09/2022] - Se realiza la primera subida del proyecto plenamente funcional. Pendiente de mejorar algunos aspectos visuales.
+- [29/12/2022] - Se aloja el proyecto en https://mdimassimo.com/projects/javascript-platzi1/
